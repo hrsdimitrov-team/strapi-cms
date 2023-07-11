@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "learner_hangout_blog_posts_categories",
+  "info": {
+    "singularName": "learner-hangout-blog-posts-category",
+    "pluralName": "learner-hangout-blog-posts-categories",
+    "displayName": "Learner's Hangout Blog Posts Categories",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categoryDisplayName": {
+      "type": "string"
+    },
+    "blogPosts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::learner-hangout-blog-post.learner-hangout-blog-post",
+      "mappedBy": "categories"
+    },
+    "categorySlug": {
+      "type": "uid",
+      "targetField": "categoryDisplayName"
+    }
+  }
+}

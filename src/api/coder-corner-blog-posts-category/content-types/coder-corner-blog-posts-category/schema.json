@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "coder_corner_blog_posts_categories",
+  "info": {
+    "singularName": "coder-corner-blog-posts-category",
+    "pluralName": "coder-corner-blog-posts-categories",
+    "displayName": "Coder's Corner Blog Posts Categories",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "categoryDisplayName": {
+      "type": "string"
+    },
+    "blogPosts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::coder-corner-blog-post.coder-corner-blog-post",
+      "mappedBy": "categories"
+    },
+    "categorySlug": {
+      "type": "uid",
+      "targetField": "categoryDisplayName"
+    }
+  }
+}
