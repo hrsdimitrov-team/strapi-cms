@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notioneers_hangout_blog_post_categories",
+  "info": {
+    "singularName": "notioneers-hangout-blog-post-category",
+    "pluralName": "notioneers-hangout-blog-post-categories",
+    "displayName": "Notioneer's Hangout Blog Post Category"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "name",
+      "required": true
+    },
+    "posts": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::notioneers-hangout-blog-post.notioneers-hangout-blog-post",
+      "inversedBy": "categories"
+    }
+  }
+}
