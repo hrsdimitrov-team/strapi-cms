@@ -30,6 +30,10 @@
     "publishedDate": {
       "type": "date",
       "required": true
+    },
+    "previewText": {
+      "type": "text",
+      "required": true
     }
   }
 }

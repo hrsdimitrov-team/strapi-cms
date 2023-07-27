@@ -4,7 +4,8 @@
   "info": {
     "singularName": "coders-hangout-newsletter-issue",
     "pluralName": "coders-hangout-newsletter-issues",
-    "displayName": "Coder's Hangout Newsletter Issue"
+    "displayName": "Coder's Hangout Newsletter Issue",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -28,6 +29,10 @@
     },
     "publishedDate": {
       "type": "date",
+      "required": true
+    },
+    "previewText": {
+      "type": "text",
       "required": true
     }
   }
