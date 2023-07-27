@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "notionee_s_hangout_newsletter_issues",
+  "info": {
+    "singularName": "notioneers-hangout-newsletter-issue",
+    "pluralName": "notionee-s-hangout-newsletter-issues",
+    "displayName": "Notioneer's Hangout Newsletter Issue"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "issueNumber": {
+      "type": "integer",
+      "required": true,
+      "default": 1,
+      "unique": true
+    },
+    "content": {
+      "type": "richtext",
+      "required": true
+    },
+    "publishedDate": {
+      "type": "date",
+      "required": true
+    }
+  }
+}
