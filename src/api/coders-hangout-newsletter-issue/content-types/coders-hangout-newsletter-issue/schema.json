@@ -1,9 +1,9 @@
 {
   "kind": "collectionType",
-  "collectionName": "coder_s_hangout_newsletter_issues",
+  "collectionName": "coders_hangout_newsletter_issues",
   "info": {
-    "singularName": "coder-s-hangout-newsletter-issue",
-    "pluralName": "coder-s-hangout-newsletter-issues",
+    "singularName": "coders-hangout-newsletter-issue",
+    "pluralName": "coders-hangout-newsletter-issues",
     "displayName": "Coder's Hangout Newsletter Issue"
   },
   "options": {
@@ -11,19 +11,20 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "issueNumber": {
-      "type": "integer",
+    "title": {
+      "type": "string",
       "required": true,
-      "default": 1
+      "unique": true
     },
     "content": {
       "type": "richtext",
       "required": true
     },
-    "title": {
-      "type": "string",
+    "issueNumber": {
+      "type": "integer",
       "required": true,
-      "unique": true
+      "unique": true,
+      "default": 1
     },
     "publishedDate": {
       "type": "date",
