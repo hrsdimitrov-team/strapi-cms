@@ -13,7 +13,7 @@
     "@strapi/plugin-i18n": "^4.11.3",
     "@strapi/plugin-users-permissions": "4.11.3",
     "@strapi/strapi": "4.11.3",
-    "pg": "8.11.1",
+    "pg": "8.11.3",
     "strapi-provider-cloudflare-r2": "^0.2.3"
   },
   "author": {
