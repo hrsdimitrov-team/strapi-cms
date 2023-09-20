@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@strapi/plugin-i18n": "^4.11.3",
-    "@strapi/plugin-users-permissions": "4.11.3",
+    "@strapi/plugin-users-permissions": "4.13.7",
     "@strapi/strapi": "4.11.3",
     "pg": "8.11.1",
     "strapi-provider-cloudflare-r2": "^0.2.3"
